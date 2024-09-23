@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     #<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title>Hadeel Moustafa Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
         body, h1, h2, h3, h4, h5 {
@@ -115,23 +117,59 @@
 
 
 
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <a href="projects/project1.html">Project 1</a>
-                <p>A description of your project</p>
-            </li>
-            <li>
-                <a href="projects/project2.html">Project 2</a>
-                <p>A description of your second project</p>
-            </li>
-        </ul>
-    </section>
-    <footer>
-  
-        <p>Contact me at: hadeel94.9@hotmail.com</p>
+    <!-- Blog entries -->
+    <div id="projects">  </div>
+
+    <!-- Title for Projects -->
+    <div class="w3-container w3-center w3-padding-16">
+        <br>
+        <h2><b>Projects</b></h2>
+    </div>
+
+    <div class="w3-content" style="max-width:1400px">
+
+      <!-- Blog entry -->
+        <div class="w3-card-4 w3-margin w3-white">
+            <!-- Image -->
+            <img src="images\EMFSAU.png" alt="">
+            <div class="w3-container">
+                <!-- title with link -->
+                <h3><b><a href="html/project1.html">A systematic computational database for one-dimensional material</a></b></h3>
+                <!-- type & date -->
+                <h5> Ph.D. Project, <span class="w3-opacity">Jan. 2019 - Maj 2023 </span></h5>
+                <!-- description -->
+                <p>Systematically investigated the properties of 2,000 one-dimensional materials using density functional theory (DFT) to explore, model, and predict their structural, thermodynamic, and electronic behavior. Leveraged experimental databases and machine learning to generate novel materials, discovering hundreds of stable 1D structures. This approach uncovered insights into material stability and potential applications in quantum computing, energy conversion, and gas atom binding.</p>
+                <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <!-- read more -->
+                        <a href="html/project1.html"><p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-dark-grey w3-padding-16 w3-margin-top smaller-text">
+        <!-- Contacts -->
+        <div class="contact-links">
+            <i class="fa fa-envelope"></i> <a href="mailto:hadeel94.9@hotmail.com">hadeel94.9@hotmail.com</a>
+        </div>
+        <div class="contact-links">
+            <i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/in/hadeel-moustafa/">hadeel-moustafa</a>
+        </div>
+        <div class="contact-links">
+            <i class="fa fa-github"></i> <a href="https://github.com/Hadeel-Moustafa">Hadeel-Moustafa</a>
+        </div>
+        <!-- Year -->
+        <p>&copy; <span id="currentYear"></span> Hadeel Moustafa</p>
     </footer>
+
+    <!-- Script for the year -->
+    <script>
+        // JavaScript code to update the year
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
 
     <!-- Script for the typing -->
     <script>
